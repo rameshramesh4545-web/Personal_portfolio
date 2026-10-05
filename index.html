@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Venkatesh Selvaraj — Mechanical Engineer specializing in battery recycling, hydrometallurgy, metal recovery and process technology.">
+<title>Venkatesh Selvaraj | Mechanical & Process Technology</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fc;--text:#101322;--muted:#667085;--line:#e6e8ef;--card:#fff;--accent:#5b55e8;--accent2:#e94883;--soft:#efefff;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{color:inherit;text-decoration:none}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;max-width:var(--max);margin:auto;padding:0 22px;position:sticky;top:0;background:rgba(247,248,252,.92);backdrop-filter:blur(14px);z-index:20;border-bottom:1px solid rgba(230,232,239,.7)}
+.logo{font-family:Manrope;font-weight:800;font-size:1.25rem}.links{display:flex;gap:26px;font-size:.86rem;font-weight:600;color:#444b60}.links a:hover{color:var(--accent)}.linkedin{color:var(--accent)}.menu{display:none;border:0;background:none;font-size:24px}
+.wrap{max-width:var(--max);margin:auto;padding:0 22px}.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:60px;padding-top:55px;padding-bottom:75px}
+.kicker,.tag{font-size:.68rem;letter-spacing:.16em;font-weight:800;color:var(--accent);text-transform:uppercase}.hero h1{font-family:Manrope;font-size:clamp(3.2rem,7vw,6.5rem);line-height:.94;letter-spacing:-.065em;margin:16px 0 10px}.hero h1 span{color:var(--accent)}.hero h1.name-single{white-space:nowrap;font-size:clamp(2.8rem,6.5vw,6.2rem);color:var(--text)}.role{font-family:Manrope;font-size:clamp(1.25rem,2.4vw,2rem);font-weight:700;margin-bottom:18px}.hero p{max-width:650px;color:var(--muted);font-size:1.02rem}.buttons{display:flex;gap:12px;margin-top:28px}.btn{padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700;font-size:.84rem}.btn.primary{background:var(--text);color:#fff;border-color:var(--text)}.btn:hover{transform:translateY(-2px)}.stats{display:flex;gap:36px;margin-top:42px}.stats strong{display:block;font-family:Manrope;font-size:1.5rem}.stats small{color:var(--muted);font-size:.7rem}
+.photo-wrap{display:flex;justify-content:center}.photo{width:min(330px,75vw);height:410px;border-radius:28px;object-fit:cover;object-position:center top;box-shadow:0 25px 65px rgba(30,34,70,.15);border:8px solid #fff}
+section{padding:95px 0}.section-title{font-family:Manrope;font-size:clamp(2rem,4vw,3.6rem);letter-spacing:-.045em;line-height:1.05;margin:10px 0 35px}.about{display:grid;grid-template-columns:1fr 1fr;gap:50px}.about p{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.chip{background:var(--soft);color:#4844a9;padding:7px 10px;border-radius:8px;font-size:.7rem;font-weight:700}
+.timeline{border-top:1px solid var(--line)}.item{display:grid;grid-template-columns:180px 1fr;gap:35px;padding:34px 0;border-bottom:1px solid var(--line)}.date{font-size:.76rem;color:var(--muted);font-weight:600}.item h3{font-family:Manrope;font-size:1.25rem;margin:0 0 3px}.company{color:var(--accent);font-size:.84rem;font-weight:700}.item ul{color:var(--muted);font-size:.87rem;padding-left:18px}.item li+li{margin-top:7px}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:18px}.skill{background:var(--card);border:1px solid var(--line);padding:26px;border-radius:16px}.skill .num{font-size:.68rem;color:var(--accent);font-weight:800}.skill h3{font-family:Manrope;margin:14px 0 7px;font-size:1.1rem}.skill p{color:var(--muted);font-size:.82rem;margin:0}
+.edu{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;justify-content:space-between;gap:30px}.edu h3{font-family:Manrope;margin:6px 0}.edu p{color:var(--muted);margin:0}
+.contact{background:#151827;color:#fff;border-radius:24px;padding:52px}.contact .tag{color:#aaa6ff}.contact h2{font-family:Manrope;font-size:clamp(2.3rem,5vw,4.2rem);line-height:1;margin:12px 0 15px;letter-spacing:-.05em}.contact p{color:#c3c6d5;max-width:620px}.contact-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.contact-links a{background:#24283b;border:1px solid #34384e;padding:12px 15px;border-radius:10px;font-size:.78rem}
+footer{max-width:var(--max);margin:auto;padding:30px 22px 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:.7rem}
+@media(max-width:800px){.links{display:none}.menu{display:block}.hero{grid-template-columns:1fr;text-align:left}.photo-wrap{order:-1;justify-content:flex-start}.photo{width:230px;height:285px}.about,.skills{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:6px}.edu{flex-direction:column}.stats{gap:20px}.contact{padding:34px 25px}}
+</style>
+
+<style id="colorful-overrides">
+:root{
+  --bg:#fbf9ff;--text:#15152a;--muted:#64677d;--line:#e8e5f2;
+  --card:#ffffff;--purple:#6857f5;--pink:#f34b91;--orange:#ff9b3d;
+  --cyan:#16c8c2;--yellow:#ffd85a;--blue:#4b8df8;
+}
+body{
+  background:
+    radial-gradient(circle at 8% 8%,rgba(255,75,145,.16),transparent 23%),
+    radial-gradient(circle at 90% 15%,rgba(104,87,245,.17),transparent 25%),
+    radial-gradient(circle at 85% 80%,rgba(22,200,194,.13),transparent 22%),
+    var(--bg);
+}
+.nav{
+  background:rgba(251,249,255,.78);
+  border-bottom:1px solid rgba(104,87,245,.12);
+}
+.logo{
+  color:#fff!important;
+  background:linear-gradient(135deg,var(--purple),var(--pink));
+  padding:7px 11px;border-radius:12px;
+  box-shadow:0 8px 24px rgba(104,87,245,.25);
+}
+.links a:hover{color:var(--pink)}
+.links .linkedin{color:var(--purple)}
+.hero{position:relative}
+.hero:before{
+  content:"";position:absolute;right:-80px;top:40px;width:470px;height:470px;
+  background:linear-gradient(135deg,rgba(243,75,145,.18),rgba(104,87,245,.13),rgba(22,200,194,.14));
+  border-radius:47% 53% 65% 35%;filter:blur(2px);z-index:-1;
+}
+.hero h1{
+  background:linear-gradient(90deg,#15152a 5%,#6857f5 45%,#f34b91 78%,#ff9b3d);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero h1.name-single{white-space:nowrap}
+.hero .kicker{
+  display:inline-block;padding:7px 12px;border-radius:999px;
+  background:linear-gradient(90deg,rgba(104,87,245,.12),rgba(243,75,145,.12));
+  color:var(--purple);
+}
+.role{
+  color:var(--pink);
+  background:linear-gradient(90deg,var(--purple),var(--pink));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.btn.primary{
+  background:linear-gradient(135deg,var(--purple),var(--pink));
+  border:none;box-shadow:0 12px 28px rgba(104,87,245,.25);
+}
+.btn:not(.primary){background:#fff}
+.photo{
+  border:9px solid #fff;
+  box-shadow:0 25px 70px rgba(104,87,245,.22);
+  position:relative;
+}
+.photo-wrap:after{
+  content:"";position:absolute;width:250px;height:250px;border-radius:50%;
+  background:linear-gradient(135deg,var(--yellow),var(--cyan));
+  opacity:.28;filter:blur(45px);z-index:-1;
+}
+.stats div:first-child strong{color:var(--purple)}
+.stats div:nth-child(2) strong{color:var(--pink)}
+.stats div:nth-child(3) strong{color:#10aaa5}
+section:nth-of-type(even){position:relative}
+.section-title{
+  background:linear-gradient(90deg,var(--text),var(--purple),var(--pink));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.chip{
+  background:linear-gradient(135deg,rgba(104,87,245,.11),rgba(243,75,145,.10));
+  color:#5146c5;border:1px solid rgba(104,87,245,.10);
+}
+.skill{
+  position:relative;overflow:hidden;
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+}
+.skill:nth-child(1){border-top:4px solid var(--purple)}
+.skill:nth-child(2){border-top:4px solid var(--pink)}
+.skill:nth-child(3){border-top:4px solid var(--cyan)}
+.skill:nth-child(4){border-top:4px solid var(--orange)}
+.skill:nth-child(5){border-top:4px solid var(--blue)}
+.skill:nth-child(6){border-top:4px solid var(--yellow)}
+.skill:hover{transform:translateY(-7px);box-shadow:0 22px 45px rgba(68,60,150,.13)}
+.skill:after{
+  content:"";position:absolute;width:100px;height:100px;right:-48px;bottom:-48px;
+  border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));opacity:.12;
+}
+.item:nth-child(1) .company{color:var(--purple)}
+.item:nth-child(2) .company{color:var(--pink)}
+.item:nth-child(3) .company{color:#0da9a4}
+.contact{
+  background:linear-gradient(135deg,#1a1740 0%,#5444c9 42%,#df407e 78%,#ff983d 120%);
+  box-shadow:0 25px 65px rgba(104,87,245,.27);
+}
+.contact .tag{color:#ffe3ee}
+.contact-links a{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.2)}
+footer{border-top-color:rgba(104,87,245,.13)}
+@media(max-width:650px){
+  .hero h1.name-single{font-size:clamp(2.4rem,11vw,4rem)}
+}
+</style>
+
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#home">VS.</a>
+  <div class="links">
+    <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    <a class="linkedin" href="mailto:venkateshselvaraj03@gmail.com">Email ↗</a>
+  </div>
+  <button class="menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+</nav>
+
+<main>
+<section id="home" class="hero wrap">
+  <div>
+    <h1 class="name-single">Venkatesh Selvaraj</h1>
+    <div class="kicker">MECHANICAL ENGINEER</div>
+    <div class="role">Battery Recycling | Hydrometallurgy | Metal Recovery</div>
+    <p>Mechanical engineering professional with 9+ years of industrial experience across analytical instrumentation, lithium-ion battery recycling, hydrometallurgy, pyrometallurgy, metal extraction and pilot plant operations.</p>
+    <div class="buttons"><a class="btn primary" href="#contact">Let's Connect</a><a class="btn" href="#experience">View Experience</a></div>
+    <div class="stats"><div><strong>9+</strong><small>Years Experience</small></div><div><strong>6+</strong><small>Years Specialized</small></div><div><strong>3</strong><small>Analysis Platforms</small></div></div>
+  </div>
+  <div class="photo-wrap"><img class="photo" src="assets/profile.png" alt="Venkatesh Selvaraj"></div>
+</section>
+
+<section id="about" class="wrap">
+  <div class="tag">ABOUT ME</div><h2 class="section-title">Hands-on, technical and ready to contribute.</h2>
+  <div class="about">
+    <div><p>Diploma Mechanical Engineer with extensive industrial experience across analytical instrumentation, lithium-ion battery recycling, hydrometallurgy, pyrometallurgy and metal extraction.</p><p>At CSIR-CECRI, my work combines laboratory analysis, process development, pilot plant activities, equipment commissioning, preventive maintenance and technical coordination.</p></div>
+    <div><p>My practical strengths include ICP-OES, ICP-MS and WD-XRF, electrowinning systems, electro-dialysis stack cell reactors, solvent extraction and mechanical utilities.</p><div class="chips"><span class="chip">Battery Recycling</span><span class="chip">Hydrometallurgy</span><span class="chip">Pyrometallurgy</span><span class="chip">Instrumentation</span><span class="chip">Pilot Plant</span><span class="chip">Mechanical Systems</span></div></div>
+  </div>
+</section>
+
+<section id="experience" class="wrap">
+  <div class="tag">EXPERIENCE</div><h2 class="section-title">Professional Journey</h2>
+  <div class="timeline">
+    <article class="item"><div class="date">July 2020 — Present</div><div><h3>Project Technical Assistant</h3><div class="company">CSIR – Central Electrochemical Research Institute (CSIR-CECRI)</div><ul><li>Support hydrometallurgy, pyrometallurgy, battery recycling and pilot plant operations.</li><li>Operate ICP-OES, ICP-MS and WD-XRF for elemental and material analysis.</li><li>Support solvent extraction, metal extraction, recovery and separation processes.</li><li>Designed, fabricated and operated electrowinning and electro-dialysis stack cell systems.</li><li>Coordinate commissioning, maintenance, HVAC utilities, manpower, vendors and technical documentation.</li></ul></div></article>
+    <article class="item"><div class="date">March 2019 — March 2020</div><div><h3>Apprentice Trainee</h3><div class="company">CSIR – Central Electrochemical Research Institute</div><ul><li>Supported precision assembly, mechanical fabrication and prototype development.</li><li>Operated fabrication equipment and performed component finishing.</li></ul></div></article>
+    <article class="item"><div class="date">July 2017 — March 2019</div><div><h3>Service Technician</h3><div class="company">Ashishta Motors (Mahindra)</div><ul><li>Performed mechanical servicing, preventive maintenance, inspection and repairs.</li><li>Diagnosed mechanical faults and supported component replacement and reliability.</li></ul></div></article>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <div class="tag">CORE SKILLS</div><h2 class="section-title">What I Work With</h2>
+  <div class="skills">
+    <div class="skill"><div class="num">01</div><h3>Analytical Instrumentation</h3><p>ICP-OES, ICP-MS, WD-XRF, elemental analysis and material characterization.</p></div>
+    <div class="skill"><div class="num">02</div><h3>Hydrometallurgy</h3><p>Lithium-ion battery recycling, solvent extraction, metal extraction and recovery.</p></div>
+    <div class="skill"><div class="num">03</div><h3>Electrochemical Processing</h3><p>Electrowinning, electro-dialysis stack cell reactor setups and molten salt electrolysis.</p></div>
+    <div class="skill"><div class="num">04</div><h3>Pyrometallurgy</h3><p>High-temperature processing, silicon carbide production and magnesium melting & casting.</p></div>
+    <div class="skill"><div class="num">05</div><h3>Maintenance & Utilities</h3><p>Pumps, compressors, piping, HVAC, chillers, cooling towers and preventive maintenance.</p></div>
+    <div class="skill"><div class="num">06</div><h3>Project & Operations</h3><p>Technical documentation, tender documentation, vendor coordination, scheduling, manpower and AutoCAD.</p></div>
+  </div>
+</section>
+
+<section id="education" class="wrap">
+  <div class="tag">EDUCATION</div><h2 class="section-title">Academic Background</h2>
+  <div class="edu"><div><div class="date">2015 — 2017</div><h3>Diploma in Mechanical Engineering</h3><p>Alagappa Polytechnic College</p></div><div><div class="date">LANGUAGES</div><p><b>English</b> — C1 Full Professional</p><p><b>German</b> — B1 Intermediate</p></div></div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="contact"><div class="tag">LET'S CONNECT</div><h2>Looking for the next opportunity.</h2><p>Open to opportunities and collaborations in mechanical engineering, battery recycling, hydrometallurgy, metal recovery, analytical instrumentation and pilot plant operations.</p><div class="contact-links"><a href="mailto:venkateshselvaraj03@gmail.com">✉ venkateshselvaraj03@gmail.com</a><a href="tel:+918778966400">☎ +91 8778966400</a></div></div>
+</section>
+</main>
+<footer><span>© 2026 Venkatesh Selvaraj</span><span>Mechanical Engineering • Process Technology</span></footer>
+<script>
+const style=document.createElement('style');style.textContent='.mobile{display:flex!important;position:absolute;top:72px;left:0;right:0;background:#fff;padding:20px;flex-direction:column;gap:15px;border-bottom:1px solid #e6e8ef}';document.head.appendChild(style);
+</script>
+</body>
+</html>
